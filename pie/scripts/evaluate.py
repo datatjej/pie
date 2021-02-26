@@ -1,5 +1,9 @@
 # Can be run with python -m pie.scripts.evaluate
 import os.path
+
+import sys
+sys.path.append('/home/guserbto@GU.GU.SE/pie')
+
 from pie import utils
 
 
