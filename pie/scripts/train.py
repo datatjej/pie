@@ -5,6 +5,9 @@ import os
 from datetime import datetime
 import logging
 
+import sys
+sys.path.append('/home/guserbto@GU.GU.SE/pie')
+
 import pie
 from pie.settings import settings_from_file
 from pie.trainer import Trainer
