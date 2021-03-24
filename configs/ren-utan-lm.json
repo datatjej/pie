@@ -1,0 +1,56 @@
+{
+  "modelpath": "models",
+  "modelname": "ren-utan-lm", // any model prefix relevant to the experiment
+    
+  "input_path": "/home/guserbto@GU.GU.SE/pie-data/historical/ren/train.tsv",
+  "dev_path": "/home/guserbto@GU.GU.SE/pie-data/historical/ren/dev.tsv",
+  "sep": "\t",
+
+  "report_freq": 200,
+  "max_sent_len": 35,
+
+  "tasks": [
+    {
+      "name": "lemma",
+      "target": true,
+      "context": "sentence",
+      "level": "char",
+      "decoder": "attentional",
+      "settings": {
+        "bos": true,
+        "eos": true,
+        "lower": true,
+        "target": "lemma"
+      },
+      "layer": -1
+    }
+  ],
+
+  "epochs": 100,
+  "batch_size": 25,
+  "dropout": 0.25,
+  "clip_norm": 5,
+
+  "cell": "GRU",
+  "num_layers": 1,
+  "hidden_size": 150,
+  "wemb_dim": 0,
+  "cemb_dim": 300,
+  "cemb_type": "rnn",
+  "cemb_layers": 2,
+  "scorer": "general",
+
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "lr_factor": 0.75,
+  "lr_patience": 2,
+  
+  "include_lm": false,
+  "lm_shared_softmax": false,
+  "lm_schedule": {
+    "patience": 2,
+    "factor": 0.5,
+    "weight": 0.2,
+    "mode": "min"
+  }
+}

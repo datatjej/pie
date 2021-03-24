@@ -5,8 +5,6 @@ import sys
 sys.path.append('/home/guserbto@GU.GU.SE/pie')
 
 from pie import utils
-
-
 from pie.models import BaseModel
 from pie.data import Dataset, Reader
 from pie.settings import load_default_settings, settings_from_file

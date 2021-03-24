@@ -1,5 +1,8 @@
 
 # Can be run with python -m pie.scripts.tag
+
+import sys
+sys.path.append('/home/guserbto@GU.GU.SE/pie')
 from pie import utils
 from pie.tagger import Tagger
 

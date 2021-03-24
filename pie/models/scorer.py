@@ -41,6 +41,8 @@ def compute_scores(trues, preds):
         p = format_score(p)
         r = format_score(r)
         a = format_score(accuracy_score(trues, preds))
+        print("trues: ", trues[:500])
+        print("preds: ", preds[:500])
 
     return {'accuracy': a, 'precision': p, 'recall': r, 'support': len(trues)}
 
@@ -91,6 +93,9 @@ class Scorer(object):
             self.preds.append(pred)
             self.trues.append(true)
             self.tokens.append(token)
+        
+        #print("trues: ", self.trues[:500])
+        #print("preds: ", self.preds[:500])
 
     def get_scores(self):
         """
