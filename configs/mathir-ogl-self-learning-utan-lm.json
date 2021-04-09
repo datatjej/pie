@@ -1,9 +1,9 @@
 {
   "modelpath": "models",
-  "modelname": "mathir-ogl-moses-rest-norm-self2-med-LM", // any model prefix relevant to the experiment
+  "modelname": "mathir-ogl-self-learning-utan-lm", // any model prefix relevant to the experiment
     
-  "input_path": "/home/guserbto@GU.GU.SE/pie-data/historical/mathir_ogl_moses_rest_norm_self_learning_2/train.tsv",
-  "dev_path": "/home/guserbto@GU.GU.SE/pie-data/historical/mathir_ogl_moses_rest_norm_self_learning_2/dev.tsv",
+  "input_path": "/home/guserbto@GU.GU.SE/pie-data/historical/mathir_ogl_moses_rest_self_learning/train.tsv",
+  "dev_path": "/home/guserbto@GU.GU.SE/pie-data/historical/mathir_ogl_moses_rest_self_learning/dev.tsv",
   "sep": "\t",
 
   "report_freq": 200,
@@ -45,8 +45,8 @@
   "lr_factor": 0.75,
   "lr_patience": 2,
   
-  "include_lm": true,
-  "lm_shared_softmax": true,
+  "include_lm": false,
+  "lm_shared_softmax": false,
   "lm_schedule": {
     "patience": 2,
     "factor": 0.5,

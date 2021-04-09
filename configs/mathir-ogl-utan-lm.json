@@ -1,9 +1,9 @@
 {
   "modelpath": "models",
-  "modelname": "mathir-ogl-utan-lm", // any model prefix relevant to the experiment
+  "modelname": "mathir-ogl-norm-utan-lm", // any model prefix relevant to the experiment
     
-  "input_path": "/home/guserbto@GU.GU.SE/pie-data/historical/mathir_ogl_moses_rest/train.tsv",
-  "dev_path": "/home/guserbto@GU.GU.SE/pie-data/historical/mathir_ogl_moses_rest/dev.tsv",
+  "input_path": "/home/guserbto@GU.GU.SE/pie-data/historical/mathir_ogl_moses_rest_normalized/train.tsv",
+  "dev_path": "/home/guserbto@GU.GU.SE/pie-data/historical/mathir_ogl_moses_rest_normalized/dev.tsv",
   "sep": "\t",
 
   "report_freq": 200,
