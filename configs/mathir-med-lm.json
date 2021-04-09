@@ -1,6 +1,6 @@
 {
   "modelpath": "models",
-  "modelname": "mathir-ogl-moses-rest-norm-self2-med-LM", // ...any model prefix relevant to the experiment
+  "modelname": "mathir-ogl-moses-rest-norm-self2-med-LM", // any model prefix relevant to the experiment
     
   "input_path": "/home/guserbto@GU.GU.SE/pie-data/historical/mathir_ogl_moses_rest_norm_self_learning_2/train.tsv",
   "dev_path": "/home/guserbto@GU.GU.SE/pie-data/historical/mathir_ogl_moses_rest_norm_self_learning_2/dev.tsv",
